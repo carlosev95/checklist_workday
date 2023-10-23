@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.min.css">
     <title>Checklist de Tareas</title>
@@ -10,13 +10,15 @@
 <body>
     <div class="container">
         <hr>
-        <h1 class="text-center h3">Registro de Actividades</h1>
+        <h1 class="text-center h4">Registro de Actividades</h1>
         <hr>
         <form>
-            <div class="form-group">
-                <label for="datepicker">Fecha:</label>
+            <div class="form-group mx-auto col-md-3">
+                <div class="text-center h5">
+                    <label for="datepicker">Fecha:</label>
+                </div>
                 <div class="input-group date">
-                    <input type="text" class="form-control" id="datepicker">
+                    <input type="text" class="form-control text-center" id="datepicker">
                     <div class="input-group-addon">
                         <span class="glyphicon glyphicon-th"></span>
                     </div>
@@ -27,15 +29,14 @@
             <thead>
                 <tr>
                     <th class="col-2">Tarea</th>
-                    <th class="col-1 text-muted font-weight-normal h6">11:00 PM</th>
-                    <th class="col-1 text-muted font-weight-normal h6">12:00 AM</th>
-                    <th class="col-1 text-muted font-weight-normal h6">01:00 AM</th>
-                    <th class="col-1 text-muted font-weight-normal h6">02:00 AM</th>
-                    <th class="col-1 text-muted font-weight-normal h6">03:00 AM</th>
-                    <th class="col-1 text-muted font-weight-normal h6">04:00 AM</th>
-                    <th class="col-1 text-muted font-weight-normal h6">05:00 AM</th>
-                    <th class="col-1 text-muted font-weight-normal h6">06:00 AM</th>
-                    <th class="col-1 text-muted font-weight-normal h6">07:00 AM</th>
+                    <th class="col-1 small">11:00PM 12:00AM</th>
+                    <th class="col-1 small">12:00PM 01:00AM</th>
+                    <th class="col-1 small">01:00AM 02:00AM</th>
+                    <th class="col-1 small">02:00AM 03:00AM</th>
+                    <th class="col-1 small">03:00AM 04:00AM</th>
+                    <th class="col-1 small">04:00AM 05:00AM</th>
+                    <th class="col-1 small">05:00AM 06:00AM</th>
+                    <th class="col-1 small">06:00AM 07:00AM</th>
                 </tr>
             </thead>
             <tbody>
@@ -43,62 +44,103 @@
                     <td>Tarea 1</td>
                     <td>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="task1_9AM">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_9AM">
                             <label class="form-check-label" for="task1_9AM"></label>
                         </div>
                     </td>
                     <td>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="task1_10AM">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_10AM">
                             <label class="form-check-label" for="task1_10AM"></label>
                         </div>
                     </td>
                     <td>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="task1_11AM">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_11AM">
                             <label class="form-check-label" for="task1_11AM"></label>
                         </div>
                     </td>
                     <td>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="task1_11AM">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_11AM">
                             <label class="form-check-label" for="task1_11AM"></label>
                         </div>
                     </td>
                     <td>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="task1_11AM">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_11AM">
                             <label class="form-check-label" for="task1_11AM"></label>
                         </div>
                     </td>
                     <td>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="task1_11AM">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_11AM">
                             <label class="form-check-label" for="task1_11AM"></label>
                         </div>
                     </td>
                     <td>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="task1_11AM">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_11AM">
                             <label class="form-check-label" for="task1_11AM"></label>
                         </div>
                     </td>
                     <td>
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="task1_11AM">
-                            <label class="form-check-label" for="task1_11AM"></label>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="task1_11AM">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_11AM">
                             <label class="form-check-label" for="task1_11AM"></label>
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td>Tarea 2</td>
-                    <!-- Repite para cada hora y tarea -->
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_9AM">
+                            <label class="form-check-label" for="task1_9AM"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_10AM">
+                            <label class="form-check-label" for="task1_10AM"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_11AM">
+                            <label class="form-check-label" for="task1_11AM"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_11AM">
+                            <label class="form-check-label" for="task1_11AM"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_11AM">
+                            <label class="form-check-label" for="task1_11AM"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_11AM">
+                            <label class="form-check-label" for="task1_11AM"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_11AM">
+                            <label class="form-check-label" for="task1_11AM"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_11AM">
+                            <label class="form-check-label" for="task1_11AM"></label>
+                        </div>
+                    </td>
                 </tr>
                 <!-- Agrega más filas y tareas aquí -->
             </tbody>
@@ -111,7 +153,17 @@
 
     <script>
         $(document).ready(function () {
-            $('#datepicker').datepicker();
+            // Inicializa el datepicker
+            $('#datepicker').datepicker({
+            format: 'dd MM yyyy', // Establece el formato deseado
+            language: 'es' // Cambia el idioma del datepicker a español
+            });
+
+            // Obtiene la fecha actual
+            var today = new Date();
+
+            // Establece la fecha actual en el datepicker
+            $('#datepicker').datepicker('setDate', today);
         });
     </script>
 </body>
