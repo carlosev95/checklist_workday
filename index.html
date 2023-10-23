@@ -6,16 +6,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker3.min.css">
     <link rel="icon" href="img/icono_mega.ico">
-    <title>Checklist de Tareas</title>
+    <title>Monitoreo Interfaces</title>
 </head>
-<body>
+<body class="bg-primary">
     <div class="container">
         <hr>
-        <h1 class="text-center h4 text-primary">Registro de Actividades</h1>
+        <h1 class="text-center h3 text-white">Registro de Actividades</h1>
         <hr>
         <form>
             <div class="form-group mx-auto col-md-3">
-                <div class="text-center h5 text-danger">
+                <div class="text-center h5 text-white">
                     <label for="datepicker">Fecha:</label>
                 </div>
                 <div class="input-group date">
@@ -28,9 +28,9 @@
         </form>
         <hr>
         <table class="table">
-            <thead>
+            <thead class="table-danger">
                 <tr>
-                    <th class="col-2"><h5>Tarea</h5></th>
+                    <th class="col-2 text-center"><h3>Tarea</h3></th>
                     <th class="col-1"><h6 class="small">11:00PM • 12:00AM</h6></th>
                     <th class="col-1"><h6 class="small">12:00AM • 01:00AM</h6></th>
                     <th class="col-1"><h6 class="small">01:00AM • 02:00AM</h6></th>
@@ -42,7 +42,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr class="table-info">
                     <td class="small">Monitoreo de Colas ActiveMQ</td>
                     <td>
                         <div class="form-check">
@@ -93,7 +93,7 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table-success">
                     <td class="small">Monitoreo de Colas ArtemiseMQ</td>
                     <td>
                         <div class="form-check">
@@ -144,7 +144,7 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table-info">
                     <td class="small">Monitoreo de Colas Rabbit MQ</td>
                     <td>
                         <div class="form-check">
@@ -195,8 +195,8 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
-                    <td class="small">Monitoreo de comandos operacion WL</td>
+                <tr class="table-success">
+                    <td class="small">Monitoreo de comandos operación WL</td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_9AM">
@@ -246,8 +246,8 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
-                    <td class="small">Monitoreo de WL comandos Visitas / Materiales</td>
+                <tr class="table-info">
+                    <td class="small">Monitoreo de WL comandos Visitas/Materiales</td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_9AM">
@@ -297,7 +297,7 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table-success">
                     <td class="small">Monitoreo de Estado de DB de Cartera</td>
                     <td>
                         <div class="form-check">
@@ -348,8 +348,8 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
-                    <td class="small">Monitoreo de Modulo de Servicios WEB (DIMME)</td>
+                <tr class="table-info">
+                    <td class="small">Monitoreo de Módulo de Servicios WEB (DIMME)</td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_9AM">
@@ -399,7 +399,7 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table-success">
                     <td class="small">Monitoreo de PostgreSQL-Asigno</td>
                     <td>
                         <div class="form-check">
@@ -450,8 +450,8 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
-                    <td class="small">Reporte de Autoasignacion</td>
+                <tr class="table-info">
+                    <td class="small">Reporte de Autoasignación</td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_9AM">
@@ -501,7 +501,7 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table-success">
                     <td class="small">Reporte de DIMME Ventas</td>
                     <td>
                         <div class="form-check">
@@ -552,8 +552,8 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
-                    <td class="small">Monitoreo de Bitacoras Provision</td>
+                <tr class="table-info">
+                    <td class="small">Monitoreo de Bitácoras Provisión</td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_9AM">
@@ -603,7 +603,7 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table-success">
                     <td class="small">Monitoreo de Threaths</td>
                     <td>
                         <div class="form-check">
@@ -654,8 +654,8 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
-                    <td class="small">Monitoreo Pago en Linea pagina Megacable</td>
+                <tr class="table-info">
+                    <td class="small">Monitoreo Pago en Linea página Megacable</td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_9AM">
@@ -705,8 +705,8 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
-                    <td class="small">Monitoreo de Servicios en Linea</td>
+                <tr class="table-success">
+                    <td class="small">Monitoreo de Servicios en Línea</td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_9AM">
@@ -756,8 +756,8 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
-                    <td class="small">Monitoreo de Resumen Pago Entidades Externas</td>
+                <tr class="table-info">
+                    <td class="small">Monitoreo de Resúmen Pago Entidades Externas</td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_9AM">
@@ -807,8 +807,8 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
-                    <td class="small">Monitoreo de Identificacion IVR</td>
+                <tr class="table-success">
+                    <td class="small">Monitoreo de Identificación IVR</td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_9AM">
@@ -858,7 +858,7 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table-info">
                     <td class="small">WebServices - otm-ws-app</td>
                     <td>
                         <div class="form-check">
@@ -909,7 +909,7 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table-success">
                     <td class="small">365 - Dynamics</td>
                     <td>
                         <div class="form-check">
@@ -960,7 +960,7 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table-info">
                     <td class="small">TyA (Tiempos y Accesos)</td>
                     <td>
                         <div class="form-check">
@@ -1011,7 +1011,7 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table-success">
                     <td class="small">ESCALA</td>
                     <td>
                         <div class="form-check">
@@ -1062,7 +1062,7 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table-info">
                     <td class="small">ANA</td>
                     <td>
                         <div class="form-check">
@@ -1113,7 +1113,7 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table-success">
                     <td class="small">QlikView</td>
                     <td>
                         <div class="form-check">
@@ -1164,7 +1164,7 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table-info">
                     <td class="small">SINERDDI</td>
                     <td>
                         <div class="form-check">
@@ -1215,7 +1215,7 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table-success">
                     <td class="small">Reinicio Wirelinks</td>
                     <td>
                         <div class="form-check">
@@ -1266,7 +1266,7 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table-info">
                     <td class="small">Reinicio Megafactura</td>
                     <td>
                         <div class="form-check">
@@ -1317,8 +1317,59 @@
                         </div>
                     </td>
                 </tr>
-                <tr>
+                <tr class="table-success">
                     <td class="small">Ventana Mantenimiento</td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_9AM">
+                            <label class="form-check-label" for="task1_9AM"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_10AM">
+                            <label class="form-check-label" for="task1_10AM"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_11AM">
+                            <label class="form-check-label" for="task1_11AM"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_11AM">
+                            <label class="form-check-label" for="task1_11AM"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_11AM">
+                            <label class="form-check-label" for="task1_11AM"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_11AM">
+                            <label class="form-check-label" for="task1_11AM"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_11AM">
+                            <label class="form-check-label" for="task1_11AM"></label>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_11AM">
+                            <label class="form-check-label" for="task1_11AM"></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="table-info">
+                    <td class="small">Incidencias</td>
                     <td>
                         <div class="form-check">
                             <input class="form-check-input d-block mx-auto" type="checkbox" id="task1_9AM">
@@ -1373,13 +1424,13 @@
         <hr>
         <div class="input-group">
             <div class="input-group-prepend align-self-center">
-                <span class="input-group-text">Incidencias</span>
+                <span class="input-group-text text-white bg-dark">Incidencias</span>
             </div>
             <textarea class="form-control col-12" id="myTextarea" rows="1"></textarea>
         </div>
         <hr>
         <div class="d-flex justify-content-center align-items-center">
-            <button onclick="window.print();" class="btn btn-primary">Exportar a PDF</button>
+            <button onclick="window.print();" class="btn btn-danger">Exportar a PDF</button>
         </div>
         <hr>
     </div>
