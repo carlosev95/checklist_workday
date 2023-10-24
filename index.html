@@ -34,7 +34,7 @@
                         <label for="datepicker">Usuario:</label>
                     </div>
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Añade tu nombre de usuario" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <input type="text" class="form-control" placeholder="Usuario" aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <div class="input-group-append">
                             <span class="input-group-text" id="basic-addon2">@megacable.com.mx</span>
                         </div>
@@ -1556,27 +1556,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            // Inicializa el datepicker
-            $('#datepicker').datepicker({
-            format: 'dd MM yyyy', // Establece el formato deseado
-            language: 'es' // Cambia el idioma del datepicker a español
-            });
-
-            // Obtiene la fecha actual
-            var today = new Date();
-
-            // Establece la fecha actual en el datepicker
-            $('#datepicker').datepicker('setDate', today);
-        });
-
-        //Cambiar el alto del form de forma dinamica
-        $('#myTextarea').on('input', function () {
-            this.style.height = 'auto';
-            this.style.height = (this.scrollHeight) + 'px';
-        });
-    </script>
+    <script src="js/checklist.js"></script>
 </body>
 </html>
