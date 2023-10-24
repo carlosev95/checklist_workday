@@ -1,4 +1,13 @@
+/*Cambia el color de fondo*/
 .blue-bg {
     background-color: #001f3f; /* Cambia este valor al código de color que desees */
     color: white; /* Color de texto en el fondo azul marino */
+}
+
+/* Estilo scrollable para vista móvil */
+@media (max-width: 767px) {
+    .scrollable-table {
+        max-height: 300px; /* Altura máxima deseada para la tabla en vista móvil */
+        overflow-y: auto; /* Hace que la tabla sea scrollable verticalmente */
+    }
 }
