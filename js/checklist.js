@@ -24,22 +24,23 @@ $('#myTextarea2').on('input', function () {
 });
 
 // Obtén una referencia al ícono y agrega un evento de clic
-const taskElement = document.getElementById("task");
+const icons = document.querySelectorAll(".toggle-icon");
 
-function toggleIcon() {
-    if (taskElement.classList.contains("fa-times-circle")) {
-        // Cambia a icono de check y establece el color a verde
-        taskElement.classList.remove("fa-times-circle", "text-danger");
-        taskElement.classList.add("fa-check-circle", "text-success");
+function toggleIcon(event) {
+    const icon = event.target;
+    const taskId = icon.getAttribute("data-task");
+    const taskElement = document.getElementById(taskId);
+
+    if (icon.classList.contains("fa-times-circle")) {
+        icon.classList.remove("fa-times-circle", "text-danger");
+        icon.classList.add("fa-check-circle", "text-success");
     } else {
-        // Cambia a icono de tachita y establece el color a rojo
-        taskElement.classList.remove("fa-check-circle", "text-success");
-        taskElement.classList.add("fa-times-circle", "text-danger");
+        icon.classList.remove("fa-check-circle", "text-success");
+        icon.classList.add("fa-times-circle", "text-danger");
     }
 }
 
-// Agrega un listener para alternar el icono cuando se hace clic
-taskElement.addEventListener("click", toggleIcon);
-
-// Llama a la función para establecer el icono inicial
-toggleIcon();
+// Agrega un listener para alternar el ícono cuando se hace clic en cualquier ícono
+icons.forEach((icon) => {
+    icon.addEventListener("click", toggleIcon);
+});
