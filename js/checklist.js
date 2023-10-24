@@ -22,3 +22,24 @@ $('#myTextarea2').on('input', function () {
     this.style.height = 'auto';
     this.style.height = (this.scrollHeight) + 'px';
 });
+
+// Obtén una referencia al ícono y agrega un evento de clic
+const taskElement = document.getElementById("task");
+
+function toggleIcon() {
+    if (taskElement.classList.contains("fa-times-circle")) {
+        // Cambia a icono de check y establece el color a verde
+        taskElement.classList.remove("fa-times-circle", "text-danger");
+        taskElement.classList.add("fa-check-circle", "text-success");
+    } else {
+        // Cambia a icono de tachita y establece el color a rojo
+        taskElement.classList.remove("fa-check-circle", "text-success");
+        taskElement.classList.add("fa-times-circle", "text-danger");
+    }
+}
+
+// Agrega un listener para alternar el icono cuando se hace clic
+taskElement.addEventListener("click", toggleIcon);
+
+// Llama a la función para establecer el icono inicial
+toggleIcon();
