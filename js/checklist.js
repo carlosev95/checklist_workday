@@ -24,6 +24,11 @@ $('#myTextarea2').on('input', function () {
     this.style.height = (this.scrollHeight) + 'px';
 });
 
+$('#myTextarea3').on('input', function () {
+    this.style.height = 'auto';
+    this.style.height = (this.scrollHeight) + 'px';
+});
+
 // Obtén una referencia al ícono y agrega un evento de clic
 const icons = document.querySelectorAll(".toggle-icon");
 
@@ -65,4 +70,51 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+});
+
+//Agregar filas a la tabla de incidencias de forma dinamica
+$(document).ready(function() {
+    $("#agregarFila").on("click", function() {
+        // Crea una nueva fila y agrega dos celdas (nombre y edad)
+        const nuevaFila = $("<tr>");
+        nuevaFila.html(
+            '<td><textarea class="form-control" rows="1" oninput="autoGrow(this)"></textarea></td>'
+            /**/ 
+            +
+            '<td style="max-width: 50%;"><img id="image" src="placeholder.jpg" alt="Imagen" style="max-width: 100%; height: auto;"><input type="file" id="imageUpload" style="display: none;" accept="image/*"><button onclick="document.getElementById(\'imageUpload\').click();">Subir Imagen</button></td>'
+            /*<td style="max-width: 50%;"><img id="image" src="placeholder.jpg" alt="Imagen" style="max-width: 100%; height: auto;"><input type="file" id="imageUpload" style="display: none;" accept="image/*"><button onclick="document.getElementById('imageUpload').click();">Subir Imagen</button></td>*/
+            
+        );
+
+        // Agrega la nueva fila a la tabla
+        $("#tablaBody").append(nuevaFila);
+    });
+});
+
+//Aumenta el tamaño del textArea dentro de la tabla de forma dinamica
+function autoGrow(textarea) {
+    textarea.style.height = "auto";
+    textarea.style.height = (textarea.scrollHeight) + "px";
+}
+
+// Función para manejar la carga de imagen
+document.getElementById('imageUpload').addEventListener('change', function (event) {
+    const imageElement = document.getElementById('image');
+    const file = event.target.files[0];
+
+    if (file) {
+        // Validar que se haya seleccionado un archivo de imagen
+        if (file.type.startsWith('image/')) {
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+                // Actualizar la imagen en la tabla
+                imageElement.src = e.target.result;
+            };
+
+            reader.readAsDataURL(file);
+        } else {
+            alert('Por favor, selecciona un archivo de imagen válido.');
+        }
+    }
 });
