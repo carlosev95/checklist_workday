@@ -1,3 +1,4 @@
+//Calendario en español
 $(document).ready(function () {
     // Inicializa el datepicker
     $('#datepicker').datepicker({
@@ -43,4 +44,25 @@ function toggleIcon(event) {
 // Agrega un listener para alternar el ícono cuando se hace clic en cualquier ícono
 icons.forEach((icon) => {
     icon.addEventListener("click", toggleIcon);
+});
+
+//Toggle dinamico con el checkbox
+document.addEventListener('DOMContentLoaded', function () {
+    const checkboxes = document.querySelectorAll('.form-check-input');
+    const toggleIcons = document.querySelectorAll('.toggle-icon');
+
+    checkboxes.forEach(function (checkbox, index) {
+        // Ocultar el icono por defecto
+        toggleIcons[index].style.display = 'none';
+
+        checkbox.addEventListener('change', function () {
+            if (checkbox.checked) {
+                // Si se marca el checkbox, muestra el icono
+                toggleIcons[index].style.display = 'inline';
+            } else {
+                // Si se desmarca el checkbox, oculta el icono
+                toggleIcons[index].style.display = 'none';
+            }
+        });
+    });
 });
