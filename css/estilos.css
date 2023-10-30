@@ -11,3 +11,8 @@
         overflow-y: auto; /* Hace que la tabla sea scrollable verticalmente */
     }
 }
+
+/*Centrar los encabezados de cada fila verticalmente*/
+.center-text {
+    margin-bottom: 0.2rem;
+}
