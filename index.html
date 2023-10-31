@@ -1826,34 +1826,41 @@
             </table>
         </div>
         <hr>
-        <div class="input-group">
-            <div class="input-group-prepend align-self-center">
-                <span class="input-group-text text-white bg-dark">Ventana:</span>
-            </div>
-            <textarea class="form-control col-12" id="myTextarea" rows="1" placeholder="Detalles"></textarea>
+        <div class="text-center h5 text-white">
+            <label for="datepicker">Detalles de Ventana:</label>
         </div>
+        <div class="text-center">
+            <button class="btn btn-primary mb-3 mx-auto" id="agregarFilaVM">Agregar</button>
+        </div>
+        <table class="table table-bordered" id="myTextarea2">
+            <thead class="table-dark">
+                <tr>
+                    <th class="col-4 text-center"><h6 class="center-text">Ventana</h6></th>
+                    <th class="text-center"><h6 class="center-text">Detalles</h6></th>
+                </tr>
+            </thead>
+            <tbody id="tablaBody">
+                <!-- Aquí se agregarán las filas dinámicamente -->
+            </tbody>
+        </table>
         <hr>
-        <div class="container">
-            <h5>Reporte de Incidencias</h5>
-            <button class="btn btn-primary mb-3" id="agregarFila">Agregar Fila</button>
-            <table class="table table-bordered" id="myTextarea2">
-                <thead>
-                    <tr>
-                        <th>Incidencia</th>
-                        <th>Evidencia</th>
-                    </tr>
-                </thead>
-                <tbody id="tablaBody">
-                    <!-- Aquí se agregarán las filas dinámicamente -->
-                </tbody>
-            </table>
+        <div class="text-center h5 text-white">
+            <label for="datepicker">Detalles de Incidencias:</label>
         </div>
-        <!-- <div class="input-group">
-            <div class="input-group-prepend align-self-center">
-                <span class="input-group-text text-white bg-dark">Incidencias:</span>
-            </div>
-            <textarea class="form-control col-12" id="myTextarea3" rows="1" placeholder="Detalles"></textarea>
-        </div> -->
+        <div class="text-center">
+            <button class="btn btn-primary mb-3 mx-auto" id="agregarFilaIncidencias">Agregar</button>
+        </div>
+        <table class="table table-bordered" id="myTextarea2">
+            <thead class="table-dark">
+                <tr>
+                    <th class="col-4 text-center"><h6 class="center-text">Incidencia</h6></th>
+                    <th class="text-center"><h6 class="center-text">Detalles</h6></th>
+                </tr>
+            </thead>
+            <tbody id="tablaBody2">
+                <!-- Aquí se agregarán las filas dinámicamente -->
+            </tbody>
+        </table>
         <hr>
         <div class="d-flex justify-content-center align-items-center">
             <button onclick="window.print();" class="btn btn-danger">Exportar a PDF</button>
