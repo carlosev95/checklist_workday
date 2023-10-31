@@ -65,7 +65,9 @@ $(document).ready(function() {
             '<td><textarea class="form-control" rows="1" oninput="autoGrow(this)"></textarea></td>'
             /**/ 
             +
-            '<td><textarea class="form-control" rows="1" oninput="autoGrow(this)"></textarea></td>'            
+            '<td><textarea class="form-control" rows="1" oninput="autoGrow(this)"></textarea></td>'
+            +
+            '<td><textarea class="form-control" rows="1" oninput="autoGrow(this)"></textarea></td>'
         );
 
         // Agrega la nueva fila a la tabla
@@ -79,9 +81,10 @@ $(document).ready(function() {
         const nuevaFila = $("<tr>");
         nuevaFila.html(
             '<td><textarea class="form-control" rows="1" oninput="autoGrow(this)"></textarea></td>'
-            /**/ 
             +
-            '<td><textarea class="form-control" rows="1" oninput="autoGrow(this)"></textarea></td>'            
+            '<td><textarea class="form-control" rows="1" oninput="autoGrow(this)"></textarea></td>'
+            +
+            '<td><textarea class="form-control" rows="1" oninput="autoGrow(this)"></textarea></td>'
         );
 
         // Agrega la nueva fila a la tabla
