@@ -13,22 +13,6 @@ $(document).ready(function () {
     $('#datepicker').datepicker('setDate', today);
 });
 
-//Cambiar el alto del form de forma dinamica
-$('#myTextarea').on('input', function () {
-    this.style.height = 'auto';
-    this.style.height = (this.scrollHeight) + 'px';
-});
-
-$('#myTextarea2').on('input', function () {
-    this.style.height = 'auto';
-    this.style.height = (this.scrollHeight) + 'px';
-});
-
-$('#myTextarea3').on('input', function () {
-    this.style.height = 'auto';
-    this.style.height = (this.scrollHeight) + 'px';
-});
-
 // Obtén una referencia al ícono y agrega un evento de clic
 const icons = document.querySelectorAll(".toggle-icon");
 
