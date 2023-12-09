@@ -59,6 +59,11 @@ document.addEventListener('DOMContentLoaded', function () {
 //Agregar filas a la tabla de incidencias de forma dinamica
 $(document).ready(function() {
     $("#agregarFilaVM").on("click", function() {
+        const tabla = $("#myTextarea");
+
+        // Muestra la tabla al principio
+        tabla.show();
+        
         // Crea una nueva fila y agrega dos celdas (nombre y edad)
         const nuevaFila = $("<tr>");
         nuevaFila.html(
@@ -77,6 +82,11 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $("#agregarFilaIncidencias").on("click", function() {
+        const tabla = $("#myTextarea2");
+
+        // Muestra la tabla al principio
+        tabla.show();
+
         // Crea una nueva fila y agrega dos celdas (nombre y edad)
         const nuevaFila = $("<tr>");
         nuevaFila.html(

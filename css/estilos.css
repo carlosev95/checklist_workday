@@ -20,3 +20,7 @@
 .subtitle {
     margin-bottom: 1rem;
 }
+
+#myTextarea, #myTextarea2 {
+    display: none; /* Oculta la tabla por defecto */
+}
